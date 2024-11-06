@@ -14,7 +14,7 @@ export class SoapService {
     const url = `/api?soap_method=FindPerson&id=${id}`;
 
     const headers = new HttpHeaders({
-      'Content-Type': 'application/json', // Aunque no sea necesario, se puede mantener
+      'Content-Type': 'application/json',
     });
 
     return this.http.get(url, { headers, responseType: 'text' });
